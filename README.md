@@ -3,6 +3,8 @@
 # Creacion de Escenario
 Este es el **ejercisio** que realizamos en clase de prácticas donde generamos el **escenario base del Cardboard** tras realizar toda la **configuración necesaria**.
 
+![gif1](./videos_escenarios/escenario1.gif)
+
 # Moviento Escenario y Recoleccion
 
 El **jugador** puede interactuar con el **entorno** solo con la **mirada**, sin necesidad de **botones**.  
@@ -23,6 +25,7 @@ Cuando se activa la recolección mediante **OnSwordCollected**, la espada verifi
 Si es así, la espada comienza a **moverse automáticamente** hacia el **jugador**  y desactiva su **Rigidbody** para evitar que la física interfiera con el movimiento.  
 Una vez que la espada llega lo suficientemente cerca del jugador, se **desactiva** para simular que ha sido **recolectada**.
 
+![gif2](./videos_escenarios/esceanrio2.gif)
 
 # Objeto recolector
 El script de **GazeRecolectar** actúa como un **emisor de eventos**.  
@@ -31,6 +34,8 @@ Cuando el **jugador** mira un objeto con la **etiqueta "recolectar"** durante el
 Cada espada tiene su propio script **SwordObserver**, que está **suscrito al evento** lanzado por **GazeRecolectar**.  
 Cuando se activa la **recolección**, las **espadas** comienzan a **moverse automáticamente** hacia el **jugador** utilizando una **interpolación suave**.  
 Una vez que llegan lo suficientemente cerca, se **desactivan** para simular que han sido **recogidas**.
+
+![gif1](./videos_escenarios/escenario3.gif)
 
 
 
